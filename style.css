@@ -1,0 +1,31 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3599DB;
+    background-position: center;
+    background-size: cover;
+}
+
+button{
+    background-color: #2C3F51;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.65rem 1.3rem;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 1px 1px 2px 1px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #496882;
+    transform: scale(1.2);
+    padding: 0.65rem 1.3rem;
+}

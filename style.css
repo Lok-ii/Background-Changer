@@ -29,3 +29,9 @@ button:hover{
     transform: scale(1.2);
     padding: 0.65rem 1.3rem;
 }
+
+@media only screen and (max-width: 650px){
+    body{
+        flex-direction: column;
+    }
+}

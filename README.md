@@ -1,3 +1,3 @@
 # Background-Changer
 
-### Hosted Link : <a href="https://lok-ii.github.io/Background-Changer/">CLick Here</a>
+### Hosted Link : <a href="https://lok-ii.github.io/Background-Changer/">Click Here</a>

@@ -32,16 +32,16 @@ let colors = [
 ];
 
 const images = [
-  "https://wallpapercave.com/wp/wp2555917.jpg",
-  "https://wallpaperaccess.com/full/427859.jpg",
-  "https://wallpaperaccess.com/full/427873.jpg",
-  "https://wallpaperaccess.com/full/427916.jpg",
-  "https://wallpaperaccess.com/full/427924.jpg",
-  "https://wallpaperaccess.com/full/427927.jpg",
-  "https://wallpaperaccess.com/full/427934.jpg",
-  "https://wallpaperaccess.com/full/427959.jpg",
-  "https://wallpaperaccess.com/full/81246.jpg",
-  "https://wallpaperaccess.com/full/17536.jpg",
+  "./src/wp2555917.jpg",
+  "./src/427859.jpg",
+  "./src/427873.jpg",
+  "./src/427916.jpg",
+  "./src/427924.jpg",
+  "./src/427927.jpg",
+  "./src/427934.jpg",
+  "./src/427959.jpg",
+  "./src/81246.jpg",
+  "./src/17536.jpg",
 ];
 
 let colorButton = document.querySelector(".color");
@@ -52,35 +52,31 @@ colorButton.addEventListener("click", (event) => {
   let color = Math.round(Math.random() * 30);
   document.body.style.backgroundImage = "none";
   document.body.style.backgroundColor = colors[color];
+  colorButton.style.transform = "Scale(1.2)"
+
+  setTimeout(()=>{
+    colorButton.style.transform = "scale(1)";
+  }, 200);
 });
 
-function mouseDown(button) {
-  button.addEventListener("mousedown", (event) => {
-    button.style.transform = "Scale(1.2)";
-  });
-}
-
-function mouseUp(button) {
-  button.addEventListener("mouseup", (event) => {
-    button.style.transform = "Scale(1)";
-  });
-}
-mouseDown(colorButton);
-mouseUp(colorButton);
 
 imageButton.addEventListener("click", () => {
   let image = Math.floor(Math.random() * 10);
   document.body.style.backgroundColor = "none";
-  document.body.style.backgroundImage = `url(${images[image]})`;
-});
+  document.body.style.backgroundImage = `url(${images[image]})`;imageButton.style.transform = "Scale(1.2)"
 
-mouseDown(imageButton);
-mouseUp(imageButton);
+  setTimeout(()=>{
+    imageButton.style.transform = "Scale(1)";
+    imageButton.style.hover.transform = "Scale(1.2)"
+  }, 200);
+});
 
 reset.addEventListener("click", () => {
   document.body.style.backgroundColor = "white";
   document.body.style.backgroundImage = "none";
-});
+  reset.style.transform = "Scale(1.2)"
 
-mouseDown(reset);
-mouseUp(reset);
+  setTimeout(()=>{
+    reset.style.transform = "Scale(1)";
+  }, 200);
+});

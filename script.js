@@ -67,7 +67,6 @@ imageButton.addEventListener("click", () => {
 
   setTimeout(()=>{
     imageButton.style.transform = "Scale(1)";
-    imageButton.style.hover.transform = "Scale(1.2)"
   }, 200);
 });
 
